@@ -1,6 +1,7 @@
 .skills-wrapper{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1fr);
   gap: 20px;
   margin-top: 40px;
 }
@@ -36,6 +37,7 @@
 
 @media screen  and (max-width: 500px) {
    .skills-wrapper {
-    grid-template-columns: 1fr;
+     grid-template-columns: 1fr;
+     grid-auto-rows: 1fr;
    }
 }
