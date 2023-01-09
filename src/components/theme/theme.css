@@ -1,0 +1,32 @@
+.header {
+ margin-bottom: 70px;
+}
+.header-container{
+ display: flex;
+ justify-content: center;
+ padding-top: 20px;
+}
+
+
+.dark .toggle-icon path {
+  fill: hsl(100, 100%, 100%);
+}
+
+.toggle-btn{
+ border: none;
+ padding: 10px;
+ border-radius: 50%;
+ display: grid;
+ place-content: center;
+ cursor: pointer;
+ transition: 0.5s;
+ background: hsl(100, 100%, 100%);
+}
+
+.dark .toggle-btn {
+  background: #171F26;
+}
+
+.header {
+ margin-bottom: 20px;
+}

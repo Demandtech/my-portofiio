@@ -1,0 +1,98 @@
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+.fact {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.fact-card {
+  text-align: center;
+  color: #575757;
+  font-weight: 500;
+}
+
+.dark .fact-card {
+  color: #A3ABB2;
+}
+
+.fact-card h6 {
+  font-size: 20px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.btn-container a {
+  padding: 15px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #575757;
+  flex: 1;
+  font-family: 'Poppins';
+  border-radius: 8px;
+}
+
+.download {
+  text-decoration: none;
+  background: #ffb510;
+}
+
+.contact {
+  text-decoration: none;
+  background: #ffffff;
+}
+
+.dark .contact {
+  background:#171F26;
+  color: #A3ABB2;
+}
+
+.download-icon{
+  margin-left: 5px;
+  height: 18px;
+  width: 18px;
+}
+
+.download-icon path {
+  margin-left: 10px;
+  fill: #575757;
+}
+@media screen and (max-width: 435px) {
+  .fact {
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .btn-container{
+   gap: 10px;
+  }
+
+  .btn-container a{
+   padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 326px) {
+  .btn-container a{
+   font-size: 14px;
+  }
+
+  .fact-card p{
+   font-size: 14px;
+  }
+
+  .download-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
