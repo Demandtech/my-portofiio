@@ -15,6 +15,9 @@
 
 .avatar-wrapper {
   width: 120px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  --webkit-border-radius: 50%;
 }
 
 .profile-info {
@@ -38,6 +41,8 @@
   height: 120px;
   object-fit: cover;
   border-radius: 50%;
+  -moz-border-radius: 50%;
+  --webkit-border-radius: 50%;
   outline: 4px solid #ffb510;
   border: 6px solid #e5e5e5;
 }
