@@ -4,11 +4,12 @@ import Facts from './components/facts/Facts';
 import Tabs from './components/tab/Tabs';
 import Footer from './components/footer/Footer';
 
+
 import './App.css';
 
 function App() {
   return (
-    <div className='dark'>
+    <div>
      <Themetoggle />
      <Header />
      <Facts />

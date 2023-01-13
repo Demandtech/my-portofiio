@@ -2,6 +2,8 @@
 
 html, body {
   overflow-x: hidden;
+  background: #e5e5e5;
+  font-family: 'Poppins';
 }
 
 *, ::before, ::after {
@@ -13,8 +15,7 @@ html, body {
 
 
 .App{
-  background: #e5e5e5;
-  font-family: 'Poppins';
+  
 }
 
 .dark {
