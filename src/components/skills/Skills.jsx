@@ -1,7 +1,4 @@
 import skillsData from "./skillsData";
-import './skills.css'
-
-// import React from 'react'
 
 function Skills() {
   return(

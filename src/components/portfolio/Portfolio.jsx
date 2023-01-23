@@ -9,7 +9,7 @@ function Portfolio() {
     <div className='portfolio'>
       <div className='projects-wrapper'>
         {projects.map((project) => {
-          const { id, name, about, img, url } = project
+          const { id, name, about, img, url, git } = project
           return (
             <article className='project' key={id}>
               <img src={img} alt='' />
@@ -24,7 +24,7 @@ function Portfolio() {
                       </a>
                     </div>
                     <div>
-                      <a href={url} target='_blank' className='git-link'>
+                      <a href={git} target='_blank' className='git-link'>
                         <CodeIcon />
                       </a>
                     </div>
