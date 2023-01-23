@@ -1,10 +1,9 @@
 import React from 'react'
-import { ReactComponent as Facebook } from '../../assets/svgs/facebook-icon.svg'
-import { ReactComponent as Github } from '../../assets/svgs/github-icon.svg'
-import { ReactComponent as Linkedin } from '../../assets/svgs/linkedin-icon.svg'
-import { ReactComponent as Twitter } from '../../assets/svgs/twitter-icon.svg'
-import './header.css'
-import avatar from '../../assets/images/avatar.png'
+import { ReactComponent as Facebook } from '../assets/svgs/facebook-icon.svg'
+import { ReactComponent as Github } from '../assets/svgs/github-icon.svg'
+import { ReactComponent as Linkedin } from '../assets/svgs/linkedin-icon.svg'
+import { ReactComponent as Twitter } from '../assets/svgs/twitter-icon.svg'
+import avatar from '../assets/images/avatar.png'
 
 const socials = [
   { icon: <Facebook />, url: '' },

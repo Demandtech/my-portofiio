@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as LinkIcon } from '../../assets/svgs/link-icon.svg'
+import { ReactComponent as CodeIcon } from '../../assets/svgs/code-solid.svg'
 import projects from './portfolioData'
 import './portfolio.css'
 
@@ -16,9 +17,18 @@ function Portfolio() {
                 <div className='layer-wrapper'>
                   <h4>{name}</h4>
                   <p>{about}</p>
-                  <a href={url} target='_blank' className='project-link'>
-                    <LinkIcon />
-                  </a>
+                  <div className='links-wrapper'>
+                    <div>
+                      <a href={url} target='_blank' className='live-link'>
+                        <LinkIcon />
+                      </a>
+                    </div>
+                    <div>
+                      <a href={url} target='_blank' className='git-link'>
+                        <CodeIcon />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </article>

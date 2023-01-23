@@ -1,6 +1,5 @@
 import React from 'react'
-import './fact.css'
-import { ReactComponent as ArrowDown } from '../../assets/svgs/arrow-down.svg'
+import { ReactComponent as ArrowDown } from '../assets/svgs/arrow-down.svg'
 
 const factData = [
   {

@@ -1,17 +1,34 @@
-import React, {useState, useContext} from "react";
+import React, {useState, useContext, useEffect} from "react";
 
 const ThemeContext = React.createContext();
 
+const getStorageTheme = ()=> {
+  let theme = 'light-theme'
+  if(localStorage.getItem('theme')) {
+    theme = localStorage.getItem('theme')
+  }
+  return theme
+}
+
 const ThemeProvider = ({children})=> {
-  const [dark, setDark] = useState(false)
+  const [theme, setTheme] = useState(getStorageTheme)
 
 
   const toggleTheme = ()=> {
    console.log('clicked')
-   return setDark(!dark)
+   if(theme === 'light-theme'){
+    setTheme('dark-theme')
+   }else {
+    setTheme('light-theme')
+   }
   }
 
-  return <ThemeContext.Provider value={{dark,toggleTheme}}>
+  useEffect(()=> {
+    document.documentElement.classList = theme
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  return <ThemeContext.Provider value={{toggleTheme}}>
    {children}
   </ThemeContext.Provider>
 }

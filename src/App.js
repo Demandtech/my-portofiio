@@ -1,22 +1,21 @@
-import Themetoggle from './components/theme/Themetoggle';
-import Header from './components/header/Header';
-import Facts from './components/facts/Facts';
-import Tabs from './components/tab/Tabs';
-import Footer from './components/footer/Footer';
+import Themetoggle from './components/Themetoggle'
+import Header from './components/Header'
+import Facts from './components/Facts'
+import Tabs from './components/Tabs'
+import Footer from './components/Footer'
 
-
-import './App.css';
+import './App.css'
 
 function App() {
   return (
     <div>
-     <Themetoggle />
-     <Header />
-     <Facts />
-     <Tabs />
-     <Footer />
+      <Themetoggle />
+      <Header />
+      <Facts />
+      <Tabs />
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
