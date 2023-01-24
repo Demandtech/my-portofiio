@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactComponent as ArrowDown } from '../assets/svgs/arrow-down.svg'
+import { useGlobalContext } from '../context'
 
 const factData = [
   {
@@ -17,6 +18,7 @@ const factData = [
 ]
 
 function Facts() {
+  const {openModal} = useGlobalContext()
   return (
     <section>
       <div className='container'>
@@ -31,8 +33,12 @@ function Facts() {
           })}
         </div>
         <div className='btn-container'>
-          <a className='download' href='/'>Download CV <ArrowDown className='download-icon'/></a>
-          <a className='contact' href='/'>Contact me</a>
+          <a className='download' href='/'>
+            Download CV <ArrowDown className='download-icon' />
+          </a>
+          <button className='contact'onClick={openModal}>
+            Contact me
+          </button>
         </div>
       </div>
     </section>

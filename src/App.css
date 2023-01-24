@@ -11,7 +11,7 @@
   --skillBg: #f1f2f4;
   --skillColor: #575757;
   --skillheader: #3d3d3d;
-  --links: #f1f2f4
+  --links: #f1f2f4;
 }
 
 .light-theme {
@@ -24,7 +24,7 @@
   --gold: #ffb510;
   --skillBg: #f1f2f4;
   --skillColor: #575757;
-  --links: #3d3d3d
+  --links: #3d3d3d;
 }
 
 *,
@@ -38,6 +38,10 @@
 body {
   background-color: var(--primaryBg);
   font-family: 'Poppins';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .container {
@@ -113,6 +117,7 @@ body {
   -moz-border-radius: 50%;
   --webkit-border-radius: 50%;
   outline: 4px solid var(--gold);
+  --moz-outline-radius: 50%;
   border: 6px solid var(--primaryBg);
 }
 
@@ -305,28 +310,28 @@ body {
   margin-top: 20px;
 }
 
-.btn-container a {
-  padding: 15px 35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 500;
-  flex: 1;
-  font-family: 'Poppins';
-  border-radius: 8px;
-}
-
 .download {
   text-decoration: none;
   background: var(--gold);
   color: #3d3d3d;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 12px;
 }
 
 .contact {
   text-decoration: none;
   background: var(--secondaryBg);
   color: var(--primaryColor);
+  font-size: 18px;
+  font-weight: 500;
+  flex: 1;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
 }
 
 /* .dark .contact {
@@ -496,7 +501,8 @@ body {
   background: #3d3d3d;
 }
 
-.live-link path, .git-link path{
+.live-link path,
+.git-link path {
   fill: var(--links);
 }
 
@@ -505,8 +511,59 @@ body {
   fill: var(--skillBg);
 }
 
+/* Modal */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000a0;
+  display: none;
+}
+
+.article {
+  max-width: 600px;
+  background-color: var(--secondaryBg);
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+
+.el {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: var(--primaryColor);
+  
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: var(--primaryColor);
+}
+
+.modal-social {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
 
 
+.modal-social .icon {
+  font-size: 20px;
+}
+
+.open-modal {
+  display: block;
+}
 
 /* Footer */
 .footer {

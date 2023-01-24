@@ -11,7 +11,8 @@ const getStorageTheme = ()=> {
 }
 
 const ThemeProvider = ({children})=> {
-  const [theme, setTheme] = useState(getStorageTheme)
+  const [theme, setTheme] = useState(getStorageTheme);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
 
   const toggleTheme = ()=> {
@@ -23,12 +24,22 @@ const ThemeProvider = ({children})=> {
    }
   }
 
+  const openModal = ()=> {
+    document.body.style.position = 'fixed'
+    setIsModalOpen(true)
+  }
+
+  const closeModal = ()=> {
+    document.body.style.position = 'static'
+    setIsModalOpen(false)
+  }
+
   useEffect(()=> {
     document.documentElement.classList = theme
     localStorage.setItem('theme', theme)
   }, [theme])
 
-  return <ThemeContext.Provider value={{toggleTheme}}>
+  return <ThemeContext.Provider value={{toggleTheme, isModalOpen, openModal, closeModal}}>
    {children}
   </ThemeContext.Provider>
 }

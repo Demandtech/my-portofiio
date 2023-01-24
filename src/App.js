@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Facts from './components/Facts'
 import Tabs from './components/Tabs'
 import Footer from './components/Footer'
+import Modal from './components/Modal'
 
 import './App.css'
 
@@ -13,6 +14,7 @@ function App() {
       <Header />
       <Facts />
       <Tabs />
+      <Modal />
       <Footer />
     </div>
   )

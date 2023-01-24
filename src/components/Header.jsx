@@ -38,7 +38,12 @@ function Header() {
             const { icon, url } = social
             return (
               <div key={index}>
-                <a target={'_blank'} href={url} className='icon'>
+                <a
+                  target={'_blank'}
+                  href={url}
+                  className='icon'
+                  rel='noreferrer'
+                >
                   {icon}
                 </a>
               </div>
