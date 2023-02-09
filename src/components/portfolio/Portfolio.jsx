@@ -12,19 +12,29 @@ function Portfolio() {
           const { id, name, about, img, url, git } = project
           return (
             <article className='project' key={id}>
-              <img src={img} alt='' />
+              <img src={img} alt={name} loading='lazy' />
               <div className='layer'>
                 <div className='layer-wrapper'>
                   <h4>{name}</h4>
                   <p>{about}</p>
                   <div className='links-wrapper'>
                     <div>
-                      <a href={url} target='_blank' className='live-link'>
+                      <a
+                        href={url}
+                        target='_blank'
+                        className='live-link'
+                        rel='noreferrer'
+                      >
                         <LinkIcon />
                       </a>
                     </div>
                     <div>
-                      <a href={git} target='_blank' className='git-link'>
+                      <a
+                        href={git}
+                        target='_blank'
+                        className='git-link'
+                        rel='noreferrer'
+                      >
                         <CodeIcon />
                       </a>
                     </div>

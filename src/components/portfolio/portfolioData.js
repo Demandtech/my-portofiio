@@ -1,10 +1,9 @@
 import jobfilterImg from '../../assets/images/joblisting.png'
-import homeImg from '../../assets/images/home.png'
 import urlShortnerImg from '../../assets/images/url-shortner.png'
-import americanShineImg from '../../assets/images/american-shine.png'
 import calculatorImg from '../../assets/images/calculator.png'
 import ipTrackerImg from '../../assets/images/ip-tracker.png'
-
+import confyImg from '../../assets/images/gadgetgalore.png'
+import githubImg from '../../assets/images/github-user.png'
 
 const projects = [
   {
@@ -17,19 +16,19 @@ const projects = [
   },
   {
     id: 2,
-    name: 'American Shine Detail',
-    about: 'American Shine Detail created using wordPress',
-    img: americanShineImg,
-    url: 'https://cardealer-kappa.vercel.app/',
-    git: 'https://github.com/Demandtech/cardealer',
+    name: 'GadgetGalore E-commerce',
+    about: 'E-commerce website created with React & styled component)',
+    img: confyImg,
+    url: 'https://comfy-e-commerce.vercel.app/',
+    git: 'https://github.com/Demandtech/Comfy-E-commerce',
   },
   {
     id: 3,
-    name: 'Home',
-    about: 'Home Landing page created using (Html, css, javaScript)',
-    img: homeImg,
-    url: 'https://laris-restaurant.vercel.app/',
-    git: 'https://github.com/Demandtech/Room-Homepage',
+    name: 'Github User',
+    about: 'Github Users search (React, styled, Api)',
+    img: githubImg,
+    url: 'https://github-user-nu.vercel.app/',
+    git: 'https://github.com/Demandtech/Github-User',
   },
   {
     id: 4,
