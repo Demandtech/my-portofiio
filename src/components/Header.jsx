@@ -25,7 +25,7 @@ function Header() {
         <div className='title'>
           <span className='block'></span>
           <h1>
-            Adekunle Rasheed <span></span>
+            Ashraf bin Shukri<span></span>
           </h1>
         </div>
         <div className='role'>
