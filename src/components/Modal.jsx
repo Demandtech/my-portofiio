@@ -44,7 +44,7 @@ function Modal() {
               <FaTwitter className='icon' />
             </a>
             <a
-              href='https://www.linkedin.com/in/rasheed-adekunle-18540a22b/'
+              href='https://t.me/Btcdemand'
               target='_blank'
               rel='noreferrer'
             >

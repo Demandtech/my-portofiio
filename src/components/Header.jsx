@@ -3,7 +3,7 @@ import avatar from '../assets/images/avatar.png'
 import {FaTelegram, FaTwitter, FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const socials = [
-  { icon: <FaTelegram/>, url: '' },
+  { icon: <FaTelegram/>, url: 'https:t.me/Btcdemand' },
   { icon: <FaGithub />, url: 'https://github.com/Demandtech' },
   {
     icon: <FaLinkedin />,
@@ -40,6 +40,7 @@ function Header() {
                   href={url}
                   className='icon'
                   rel='noreferrer'
+                  style={{fontSize: '20px'}}
                 >
                   {icon}
                 </a>
