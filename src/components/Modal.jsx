@@ -8,6 +8,7 @@ import {
   FaWhatsappSquare,
   FaTwitter,
   FaLinkedin,
+  FaTelegram
 } from 'react-icons/fa'
 
 function Modal() {
@@ -32,11 +33,11 @@ function Modal() {
           </div>
           <div className='el'>
             <FaLocationArrow />
-            <p>Ikeja Lagos State, Nigeria</p>
+            <p>Kualar Lumpur, Malaysia</p>
           </div>
           <div className='modal-social'>
             <a
-              href='https://www.twitter.com/demandtvs'
+              href='https://www.twitter.com/demandtv'
               target='_blank'
               rel='noreferrer'
             >
@@ -47,11 +48,11 @@ function Modal() {
               target='_blank'
               rel='noreferrer'
             >
-              <FaLinkedin className='icon' />
+              <FaTelegram className='icon' />
             </a>
 
             <a
-              href='https://api.whatsapp.com/send?phone=2347060699353'
+              href='https://api.whatsapp.com/send?phone=23470606993'
               target='_blank'
               rel='noreferrer'
             >
