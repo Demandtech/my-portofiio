@@ -10,9 +10,9 @@ const socials = [
   { icon: <Github />, url: 'https://github.com/Demandtech' },
   {
     icon: <Linkedin />,
-    url: 'https://www.linkedin.com/in/rasheed-adekunle-18540a22b/',
+    url: 'https://www.linkedin.com/in/rasheed-adekunle-18540a22/',
   },
-  { icon: <Twitter />, url: 'https://twitter.com/demandtvs' },
+  { icon: <Twitter />, url: 'https://twitter.com/demandtv' },
 ]
 
 function Header() {
