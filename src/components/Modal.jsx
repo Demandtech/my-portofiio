@@ -7,7 +7,7 @@ import {
   FaLocationArrow,
   FaWhatsappSquare,
   FaTwitter,
-  FaLinkedin,
+  //FaLinkedin,
   FaTelegram
 } from 'react-icons/fa'
 

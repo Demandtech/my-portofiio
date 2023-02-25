@@ -1,19 +1,15 @@
 import React from 'react'
-import { ReactComponent as Facebook } from '../assets/svgs/facebook-icon.svg'
-import { ReactComponent as Github } from '../assets/svgs/github-icon.svg'
-import { ReactComponent as Linkedin } from '../assets/svgs/linkedin-icon.svg'
-import { ReactComponent as Twitter } from '../assets/svgs/twitter-icon.svg'
-import { ReactComponent as Telegram} from '../assets/svgs/telegram-icon.svg'
 import avatar from '../assets/images/avatar.png'
+import {FaTelegram, FaTwitter, FaLinkedin, FaGithub} from 'react-icons/fa'
 
 const socials = [
-  { icon: <Telegram />, url: '' },
-  { icon: <Github />, url: 'https://github.com/Demandtech' },
+  { icon: <FaTelegram/>, url: '' },
+  { icon: <FaGithub />, url: 'https://github.com/Demandtech' },
   {
-    icon: <Linkedin />,
+    icon: <FaLinkedin />,
     url: 'https://www.linkedin.com/in/rasheed-adekunle-18540a22/',
   },
-  { icon: <Twitter />, url: 'https://twitter.com/demandtv' },
+  { icon: <FaTwitter />, url: 'https://twitter.com/demandtv' },
 ]
 
 function Header() {
