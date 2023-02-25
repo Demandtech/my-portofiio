@@ -12,7 +12,7 @@ const factData = [
     exp: 'Completed projects',
   },
   {
-    num: 3,
+    num: 23,
     exp: 'Satisfied customers',
   },
 ]
