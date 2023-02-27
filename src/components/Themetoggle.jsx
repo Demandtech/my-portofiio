@@ -4,6 +4,8 @@ import { useGlobalContext } from '../context'
 
 const ThemeProvider = () => {
   const { toggleTheme } = useGlobalContext()
+
+ 
   return (
     <header className='header'>
       <div className='header-container'>

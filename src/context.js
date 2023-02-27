@@ -39,6 +39,16 @@ const ThemeProvider = ({children})=> {
     localStorage.setItem('theme', theme)
   }, [theme])
 
+  const hours = new Date().getHours()
+
+  useEffect(()=>{
+   if(hours < 12){
+    setTheme('dark-theme')
+   }else{
+    setTheme('light-theme')
+   }
+  }, [hours])
+
   return <ThemeContext.Provider value={{toggleTheme, isModalOpen, openModal, closeModal}}>
    {children}
   </ThemeContext.Provider>

@@ -22,7 +22,7 @@ function Header() {
         <div className='title'>
           <span className='block'></span>
           <h1>
-            Ashraf bin Shukri<span></span>
+            Rasheed Adekunle <span></span>
           </h1>
         </div>
         <div className='role'>
@@ -40,7 +40,7 @@ function Header() {
                   href={url}
                   className='icon'
                   rel='noreferrer'
-                  style={{fontSize: '20px'}}
+                  style={{ fontSize: '20px' }}
                 >
                   {icon}
                 </a>

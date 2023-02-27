@@ -8,7 +8,7 @@ const factData = [
     exp: 'Years of work experience',
   },
   {
-    num: 20,
+    num: 4,
     exp: 'Completed projects',
   },
   {
