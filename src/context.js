@@ -44,7 +44,8 @@ const ThemeProvider = ({children})=> {
   useEffect(()=>{
    if(hours < 7){
     setTheme('dark-theme')
-   }else if(hours >= 20){
+   }
+   if(hours >= 20){
     setTheme('light-theme')
    }
   }, [hours])

@@ -33,10 +33,15 @@ function Facts() {
           })}
         </div>
         <div className='btn-container'>
-          <a className='download' href='/'>
+          <a
+            className='download'
+            href='https://drive.google.com/file/d/1cbH1yoJlMXRe5DApR1k2TF3smHDcUuAv/view?usp=share_link'
+            rel='noreferrer'
+            target='_blank'
+          >
             Download CV <ArrowDown className='download-icon' />
           </a>
-          <button className='contact'onClick={openModal}>
+          <button className='contact' onClick={openModal}>
             Contact me
           </button>
         </div>
