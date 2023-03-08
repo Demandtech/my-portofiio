@@ -1,0 +1,8 @@
+.project{
+ height: 177px;
+}
+
+.portfolio{
+ max-height: 600px;
+ overflow-y: auto;
+}
