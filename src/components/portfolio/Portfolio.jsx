@@ -12,7 +12,7 @@ function Portfolio() {
           const { id, name, about, img, url, git } = project
           return (
             <article className='project' key={id}>
-              <img src={img} alt={name} loading='lazy' />
+              <img  src={img} alt={name} loading='lazy' />
               <div className='layer'>
                 <div className='layer-wrapper'>
                   <h4>{name}</h4>
